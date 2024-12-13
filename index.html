@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Document</title>
+</head>
+<body class="">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 w-1/4 mx-auto" id="form">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Qual é seu nome?
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Nome">
+        <div class="mb-4 text-red-600" id="errorName"></div>
+
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Quantos anos você tem?
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="age" type="number" placeholder="Idade">
+        <div class="mb-4 text-red-600" id="errorAge"></div>
+
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Qual linguagem de programação você está estudando?
+        </label>        
+        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="language">
+            <option selected value="">Escolher linguagem</option>
+            <option value="Java Script">Java Script</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="Java">Java</option>
+          </select>
+          <div class="mb-4 text-red-600" id="errorLanguage"></div>
+
+          <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 w-full" onclick="send()">
+            Enviar
+          </button>
+    </form>
+
+    <div class="w-1/4 mx-auto mt-8 text-center" id="res"></div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
